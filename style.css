@@ -1,0 +1,310 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Logo */
+.logo {
+    color: #00aaff;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.home img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Skills */
+.skills-list li {
+    margin: 8px;
+}
+
+/* Projects */
+.project-card {
+    background: #1a1a1a;
+    margin: 15px auto;
+    padding: 15px;
+    width: 220px;
+    border-radius: 8px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Skill Card */
+.skill-card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    padding: 80px 10%;
+    background: #000;
+    color: white;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.about-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover; /* keeps image proper */
+    border-radius: 50%; /* makes it circle */
+    border: 3px solid #222;
+    transition: 0.3s;
+}
+
+/* Simple hover */
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Text */
+.about-text {
+    max-width: 500px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+
+/* Education Section */
+.education {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.education h2 {
+    color: #00aaff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Timeline Line */
+.timeline {
+    width: 60%;
+    margin: auto;
+    border-left: 4px solid #00aaff;
+    padding-left: 30px;
+}
+
+/* Education Card */
+.edu-item {
+    background: #1a1a1a;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Circle on timeline */
+.edu-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #00aaff;
+    border-radius: 50%;
+    position: absolute;
+    left: -38px;
+    top: 25px;
+}
+
+/* Year badge */
+.year {
+    background: #00aaff;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Text */
+.edu-item h3 {
+    color: #00aaff;
+    margin-bottom: 5px;
+}
+
+.edu-item p {
+    color: #ccc;
+}
+
+/* Hover Effect */
+.edu-item:hover {
+    transform: translateX(10px);
+    background: #222;
+}
+
+/* Section */
+.projects-section {
+    padding: 80px 10%;
+    background: #000; /* pure black */
+    color: #fff;
+    text-align: center;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.project-card {
+    background: #111; /* dark grey instead of glow */
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    transition: 0.3s;
+    text-align: left;
+}
+
+/* Simple hover (clean, no glow) */
+.project-card:hover {
+    transform: translateY(-8px);
+    background: #181818;
+    border-color: #444;
+}
+
+/* Title */
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Description */
+.project-card p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Small creative element: left border accent */
+.project-card {
+    border-left: 3px solid #555;
+}
+
+.project-card:hover {
+    border-left: 3px solid #fff;
+}
+
+.certifications {
+    padding: 60px;
+    text-align: center;
+}
+
+.certifications h2 {
+    color: #00aaff;
+    margin-bottom: 30px;
+}
+
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cert-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cert-card p {
+    color: #ccc;
+    margin-top: 10px;
+}
